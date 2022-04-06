@@ -7,13 +7,16 @@ let notas = [];
 function minhaFuncao() {
     let nome = document.getElementById("nome").value;
     let telefone = document.getElementById("telefone").value;
-    let data = document.getElementById("data").value;
+    let dataInput = document.getElementById("data").value;
+    data = new Date(dataInput);
+    dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
     let nota = document.getElementById("nota").value;
     nomes[totalCadastros] = nome;
     telefones[totalCadastros] = telefone;
-    datas[totalCadastros] = data;
+    datas[totalCadastros] = dataFormatada;
     notas[totalCadastros] = nota;
     document.getElementById("usuarios").innerHTML += "<p onclick='exibir(" + totalCadastros + ")'>" + nome;
+    
     alert("Cadastrado com Sucesso!");
 
     totalCadastros++;

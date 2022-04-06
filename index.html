@@ -11,24 +11,29 @@
 </head>
 
 <body>
-    <div class="cabecalho"><p></p></div>
+    
     <div class="container">
         <h1 class="h1">Cadastro</h1>
+        <br><br>
         <p><label><b>Nome: </b><br><input class="name" id="nome" name="nome" required placeholder="Nome"></label></p>
-        <p><label><b>Telefone: </b><br><input class="telefon" id="telefone" name="number" required
-                    placeholder="(00)00000-0000"></label>
-        </p>
-        <p><label><b>Data: </b><br><input class="date" id="data" name="data" required placeholder="__/__/____"></label>
-        </p>
+        <br>
+        <p><label><b>Telefone: </b><br><input class="telefon" id="telefone" name="number" required placeholder="(00)00000-0000"></label></p>
+        <br>
+        <p><label><b>Data: </b><br><input class="date" id="data" type="date" required placeholder="__/__/____"></label></p>
+        <br>
         <p><label><b>Nota: </b><br><input class="note" id="nota" name="number" required placeholder="0,0"></label></p>
+        <br>
         <button class="botao" onclick="minhaFuncao()">Criar Cadastro</button>
         <br><br>
         <strong>Usuários: </strong>
-        <p id="usuarios"></p>
-        <br><b>Cadastro: </b>
-        <p id="cadastro"></p>
-
+        <p class="cursor" id="usuarios"></p>
+        <br><br>
+        <b>Cadastro: </b>
+        <p id="cadastro"></p> 
     </div>
+
+    <!--Bloco do rodapé-->
+    <footer class="footer"><p>Todos os direitos reservados.</p></footer>
 
 </body>
 
